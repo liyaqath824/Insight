@@ -5,7 +5,8 @@ from pyspark import SparkContext, SparkConf
 from pyspark.sql import SQLContext, SparkSession
 
 # Import data from AWS S3
-path = "s3a://amazon-reviews-insight/reviews_Amazon_Instant_Video.json"
+#path = "s3a://hello142/reviews_Office_Products_5.json/Office_Products_5.json"
+path = "s3a://hello142/reviews_Office_Products_5.json"
 conf = SparkConf().setAppName("ReadJson")
 sc = SparkContext(conf = conf)
 sqlContext = SQLContext(sc)
